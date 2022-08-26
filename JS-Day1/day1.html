@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: rgb(9, 9, 9);
+            background-color: lightpink;
+        }
+        .second{
+            display: flex;
+            flex-direction:row;
+       
+        }
+        .btn1{
+            border-radius:80rem;        
+         background-color: rgb(235, 243, 234);
+  color: rgb(15, 15, 15);
+  font-size:2rem;
+  border: 2px solid #0c0c0c;
+  width:15rem;
+  height:3rem;
+        }
+        .btn2{
+            border-radius:80rem;
+         background-color: rgb(11, 11, 11);
+         color: rgb(250, 242, 242);
+  font-size:2rem;
+  border: 2px solid #fff0f0;
+  width:15rem;
+  height:3rem; 
+        }
+    .btn1:hover {
+        cursor:pointer;
+  background-color: #c2f592;
+  color: white;}
+  .btn2:hover {
+    cursor:pointer;
+  background-color: #f47a84;
+  color: rgb(13, 13, 13);}
+  .first
+  {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+    </style>
+</head>
+<body >
+    <div class="first">
+        <h1 style="text-align: center; font-size:3rem;">MUSIC SYSTEM</h1>
+    <img src="pic2.jpg" style="border: 4px solid black; border-radius:50%; width:20rem;height:24rem;">
+    <br>
+    <div class="second"> 
+    <button onclick="play()" class="btn1" type="button">PLAY</button>
+    <button onclick="pause()" class="btn2" type="button">PAUSE</button>
+    </div>
+    <br>
+    <audio  id="myAudio"  controls>
+    <source src="music.mp3" type="audio/mpeg">
+    </audio>
+ 
+<script>
+    var gaana=document.getElementById("myAudio");
+    function play()
+    {
+        gaana.play();
+    }
+    function pause()
+    {
+        gaana.pause();
+    }
+</script>
+</div>
+</body>
+</html>
